@@ -1,15 +1,141 @@
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <title>hello</title>
+  <meta charset="UTF-8">
+  <title>adidas 스타일 페이지</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    h1 {
-      color: red;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #111;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url('https://images.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/your-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .product-card {
+      width: 220px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .product-card img {
+      width: 100%;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      margin: 10px;
+    }
+
+    .product-card p {
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <h1>하이</h1>
-  <a href=""about/">about</a>
-  <a href=""contact/">contact</a>
+  <header>
+    <h1>adidas</h1>
+    <nav>
+      <a href="#">MEN</a>
+      <a href="#">WOMEN</a>
+      <a href="#">KIDS</a>
+      <a href="#">NEW</a>
+      <a href="#">SALE</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>당신의 한계를 넘어서세요</h2>
+  </section>
+
+  <section class="section">
+    <h2>추천 제품</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://images.adidas.com/shoes1.jpg" alt="신발1">
+        <h3>울트라부스트 22</h3>
+        <p>₩219,000</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.adidas.com/shoes2.jpg" alt="신발2">
+        <h3>슈퍼스타</h3>
+        <p>₩129,000</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.adidas.com/shoes3.jpg" alt="신발3">
+        <h3>스탠스미스</h3>
+        <p>₩119,000</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 adidas Korea. All rights reserved.
+  </footer>
 </body>
 </html>
+
